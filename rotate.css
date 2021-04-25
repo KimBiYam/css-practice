@@ -1,0 +1,30 @@
+body,
+html {
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: beige;
+}
+
+.container .box {
+  width: 50%;
+  height: 50%;
+  background-color: coral;
+}
+
+.container .box > .content {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: darksalmon;
+}
+
+.container .box > .content > img {
+  width: 100%;
+  height: 100%;
+  transform: rotate(90deg);
+}
