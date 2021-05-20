@@ -9,15 +9,19 @@ p {
 }
 
 div.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  font-size: 0;
+  background: pink;
+}
+
+div.container:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
 }
 
 section.item {
-  vertical-align: top;
-  font-size: 1rem;
-  display: inline-block;
+  float: left;
   padding: 5%;
 }
 
@@ -25,7 +29,13 @@ section.item-a {
   width: 30%;
   background-color: yellow;
 }
+
 section.item-b {
   width: 50%;
   background-color: yellowgreen;
+}
+
+footer {
+  clear: both;
+  background: gray;
 }
