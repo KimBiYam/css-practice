@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  font-size: 2em;
 }
 
 h1,
@@ -12,30 +11,34 @@ div.container {
   background: pink;
 }
 
-div.container:after {
-  content: "";
-  display: block;
-  clear: both;
-  height: 0;
-  visibility: hidden;
-}
-
 section.item {
-  float: left;
   padding: 5%;
 }
 
 section.item-a {
-  width: 30%;
   background-color: yellow;
 }
 
 section.item-b {
-  width: 50%;
   background-color: yellowgreen;
 }
 
-footer {
-  clear: both;
-  background: gray;
+@media screen and (min-width: 700px) {
+  div.container {
+    font-size: 0;
+  }
+
+  section.item {
+    vertical-align: top;
+    display: inline-block;
+    font-size: 1rem;
+  }
+
+  section.item-a {
+    width: 30%;
+  }
+
+  section.item-b {
+    width: 50%;
+  }
 }
