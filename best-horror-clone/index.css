@@ -209,17 +209,36 @@ section.content-wrapper {
   background-color: #e7473c;
 }
 
+/* TODO : 컬러 적용 */
 section.content-wrapper::before {
   background-image: linear-gradient(rgba(0, 0, 0, 0.08), transparent);
   content: "";
+  width: 100%;
   height: 100px;
-  left: 0;
   position: absolute;
-  right: 0;
 }
 
 article.content {
+  color: #ffffff;
   padding: 144px;
+}
+
+header.content-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 18px;
+}
+
+header.content-header h2 {
+  font-size: 2.7rem;
+}
+
+header.content-header strong {
+  font-weight: normal;
+}
+
+header.content-header div.content-header-description {
+  font-size: 1.3rem;
 }
 
 div.content-image-wrapper,
