@@ -195,16 +195,20 @@ section.content-wrapper {
   background-color: #e7473c;
 }
 
-section.content-wrapper::before {
+section.content-wrapper article.content::before {
   background-image: linear-gradient(rgba(0, 0, 0, 0.08), transparent);
   content: "";
   height: 100px;
+  top: 0;
+  right: 0;
+  left: 0;
   position: absolute;
 }
 
 article.content {
-  color: #ffffff;
+  position: relative;
   padding: 36px;
+  color: #ffffff;
 }
 
 header.content-header {
@@ -224,6 +228,7 @@ header.content-header strong {
 header.content-header div.content-header-description {
   flex: 1;
   font-size: 1.3rem;
+  line-height: 1.2;
   text-align: right;
 }
 
