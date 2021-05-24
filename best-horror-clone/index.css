@@ -142,7 +142,8 @@ div.container {
 }
 
 header.main-header {
-  display: block;
+  display: flex;
+  flex-direction: column;
   background-color: #f0f0f0;
   color: #e7473c;
 }
@@ -152,19 +153,10 @@ header.main-header div.main-header-title {
   padding: 10vh 0 72px 72px;
 }
 
-header.main-header div.main-header-title > h1 {
-  font-size: 5rem;
-}
-
 header.main-header div.main-header-content {
   display: flex;
   flex-direction: column;
-  padding: 72px;
-}
-
-div.main-header-content-text-section {
-  max-width: 400px;
-  width: 80%;
+  padding: 36px;
 }
 
 div.main-header-content-text-section p:nth-child(1) {
@@ -222,7 +214,7 @@ header.content-header {
 }
 
 header.content-header h2 {
-  font-size: 2.7rem;
+  font-size: 1.8rem;
 }
 
 header.content-header strong {
@@ -239,9 +231,23 @@ div.content-image-wrapper > img {
 }
 
 @media screen and (min-width: 0) and (max-width: 599px) {
+  div.main-header-title > h1 {
+    font-size: 5rem;
+  }
 }
 
 @media screen and (min-width: 600px) {
+  div.main-header-title > h1 {
+    font-size: 7.2rem;
+  }
+
+  header.main-header div.main-header-content {
+    padding: 72px;
+  }
+
+  header.content-header h2 {
+    font-size: 2.7rem;
+  }
 }
 
 @media screen and (min-width: 840px) {
@@ -273,6 +279,10 @@ div.content-image-wrapper > img {
 
   article.content {
     padding: 72px;
+  }
+
+  header.content-header h2 {
+    font-size: 2.2xrem;
   }
 }
 
