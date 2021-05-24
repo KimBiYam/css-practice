@@ -198,12 +198,6 @@ nav.main-header-nav a {
   white-space: nowrap;
 }
 
-div.container > main {
-  overflow-y: auto;
-  overflow-x: hidden;
-  width: 67%;
-}
-
 section.content-wrapper {
   background-color: #e7473c;
 }
@@ -252,5 +246,11 @@ div.content-image-wrapper > img {
     display: flex;
     flex-direction: column;
     width: 33%;
+  }
+
+  div.container > main {
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 67%;
   }
 }
