@@ -195,12 +195,12 @@ section.content-wrapper {
   background-color: #e7473c;
 }
 
-/* section.content-wrapper::before {
+section.content-wrapper::before {
   background-image: linear-gradient(rgba(0, 0, 0, 0.08), transparent);
   content: "";
   height: 100px;
   position: absolute;
-} */
+}
 
 article.content {
   color: #ffffff;
@@ -231,6 +231,10 @@ div.content-image-wrapper > img {
 }
 
 @media screen and (min-width: 0) and (max-width: 599px) {
+  header.main-header div.main-header-title {
+    padding: 10vh 0 36px 36px;
+  }
+
   div.main-header-title > h1 {
     font-size: 5rem;
   }
