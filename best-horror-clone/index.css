@@ -223,6 +223,7 @@ header.content-header h2 {
 
 header.content-header strong {
   font-weight: normal;
+  white-space: nowrap;
 }
 
 header.content-header div.content-header-description {
