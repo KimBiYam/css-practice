@@ -146,6 +146,7 @@ header.main-header {
   flex-direction: column;
   background-color: #f0f0f0;
   color: #e7473c;
+  overflow: hidden;
 }
 
 header.main-header div.main-header-title {
@@ -154,8 +155,6 @@ header.main-header div.main-header-title {
 }
 
 header.main-header div.main-header-content {
-  display: flex;
-  flex-direction: column;
   padding: 36px;
 }
 
