@@ -222,7 +222,9 @@ header.content-header strong {
 }
 
 header.content-header div.content-header-description {
+  flex: 1;
   font-size: 1.3rem;
+  text-align: right;
 }
 
 div.content-image-wrapper,
