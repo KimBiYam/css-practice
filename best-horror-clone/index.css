@@ -249,6 +249,10 @@ div.content-image-wrapper > img {
     padding: 72px;
   }
 
+  article.content {
+    padding: 72px;
+  }
+
   header.content-header h2 {
     font-size: 2.7rem;
   }
@@ -279,10 +283,6 @@ div.content-image-wrapper > img {
     display: flex;
     flex-direction: column;
     width: 600px;
-  }
-
-  article.content {
-    padding: 72px;
   }
 
   header.content-header h2 {
