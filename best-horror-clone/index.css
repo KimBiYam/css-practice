@@ -152,6 +152,7 @@ header.main-header {
 }
 
 header.main-header div.main-header-title {
+  flex: 1;
   padding: 10vh 0 72px 72px;
 }
 
@@ -202,6 +203,8 @@ nav.main-header-nav a {
 }
 
 div.container > main {
+  overflow-y: auto;
+  overflow-x: hidden;
   width: 67%;
 }
 
@@ -209,14 +212,12 @@ section.content-wrapper {
   background-color: #e7473c;
 }
 
-/* TODO : 컬러 적용 */
-section.content-wrapper::before {
+/* section.content-wrapper::before {
   background-image: linear-gradient(rgba(0, 0, 0, 0.08), transparent);
   content: "";
-  width: 100%;
   height: 100px;
   position: absolute;
-}
+} */
 
 article.content {
   color: #ffffff;
