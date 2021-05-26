@@ -1,1 +1,1 @@
-### [BEST HORROR SCENES](https://besthorrorscenes.com/) 사이트 CSS 클론
+### [BEST HORROR SCENES](https://besthorrorscenes.com/) 사이트 HTML, CSS 클론
