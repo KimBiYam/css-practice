@@ -159,8 +159,12 @@ div.codiv-info > aside {
 
 div.codiv-info > aside > a {
   line-height: 18px;
-  color: #898989;
+  color: #a3a3a3;
   text-decoration: underline;
+}
+
+div.codiv-info > aside > a:hover {
+  color: #898989;
 }
 
 header.main-header {
@@ -204,6 +208,7 @@ div.profile-section {
 }
 
 div.profile-section a {
+  font-size: 1.142rem;
   padding: 12px;
   color: #fff;
 }
