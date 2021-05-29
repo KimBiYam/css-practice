@@ -175,6 +175,14 @@ header.main-header {
 }
 
 header.main-header > a.header-logo {
+  padding: 14.5px 8px;
+  cursor: pointer;
+}
+
+header.main-header > a.header-logo > img {
+  stroke: #fff;
+  filter: invert(100%) sepia(91%) saturate(38%) hue-rotate(321deg)
+    brightness(110%) contrast(110%);
 }
 
 header.main-header nav.nav-section {
