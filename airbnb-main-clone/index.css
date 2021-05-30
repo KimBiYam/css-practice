@@ -311,6 +311,7 @@ div.new-content-section > button {
 }
 
 div.nearby-destinations-section {
+  height: 260px;
   margin: 24px 0;
   padding: 0 80px;
 }
@@ -354,4 +355,38 @@ div.card-description > b {
 div.card-description > span {
   font-size: 1.125rem;
   line-height: 20px;
+}
+
+div.concept-section {
+  padding: 0 80px;
+}
+
+div.concept-section > h1 {
+  font-size: 32px;
+  padding-bottom: 16px;
+}
+
+div.concept-section > div.concept-card-section {
+  display: flex;
+}
+
+div.concept-card-section > a {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-right: 5px;
+}
+
+div.concept-card-section a img.card-image {
+  width: 302.75px;
+  height: 302.75px;
+  border-radius: 8px;
+}
+
+div.concept-card-section a span {
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #222;
 }
