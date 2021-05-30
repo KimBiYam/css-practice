@@ -176,16 +176,20 @@ header.main-header {
   position: absolute;
   padding: 0 80px;
   font-size: 1.142rem;
-  transition: background 0.25s;
+  transition: background 0.2s;
   z-index: 100;
 }
 
-.header-overflowed {
-  position: fixed;
+header.header-scrolled {
   background: #fff;
 }
 
+header.main-header a.header-scrolled {
+  color: #222 !important;
+}
+
 header.main-header > div.logo-section {
+  display: flex;
   flex: 1;
 }
 
@@ -193,13 +197,20 @@ div.logo-section > a.header-logo {
   cursor: pointer;
 }
 
-div.logo-section > a.header-logo > img {
-  filter: invert(100%) sepia(91%) saturate(38%) hue-rotate(321deg)
-    brightness(110%) contrast(110%);
+div.logo-section > a.header-logo > svg.logo-icon {
+  color: #fff;
+}
+
+div.logo-section > a.header-logo > svg.header-scrolled {
+  color: #ff385c !important;
 }
 
 header.main-header nav.nav-section {
   font-size: 0;
+}
+
+header.main-header nav.header-scrolled {
+  display: none !important;
 }
 
 nav.nav-section a {
@@ -223,7 +234,7 @@ div.profile-section a {
   padding: 12px;
 }
 
-div.profile-section a.host-item {
+a.host-item {
   font-size: 1rem;
   font-weight: 600;
   position: relative;
@@ -256,9 +267,14 @@ div.profile-section a.globe-item:hover::before {
   border-radius: 22px;
 }
 
-div.profile-section img.globe-icon {
+div.profile-section svg.globe-icon {
   width: 16px;
   height: 16px;
+  color: #fff;
+}
+
+svg.header-scrolled {
+  color: #222 !important;
 }
 
 div.profile-section > button.profile-button {
@@ -272,6 +288,10 @@ div.profile-section > button.profile-button {
   border-radius: 22px;
   border: none;
   cursor: pointer;
+}
+
+div.profile-section > button.header-scrolled {
+  border: 1px solid #dddddd !important;
 }
 
 button.profile-button > img.menu-icon {
