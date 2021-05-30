@@ -1,7 +1,7 @@
 const changeHeader = () => {
   let scrollPosition = window.scrollY;
-  const codivAside = document.getElementsByClassName("codiv-info")[0];
-  const header = document.getElementsByClassName("main-header")[0];
+  const codivAside = document.querySelector("div.codiv-info");
+  const header = document.querySelector("header.main-header");
 
   const codivAsideHeight = codivAside.offsetHeight;
 
