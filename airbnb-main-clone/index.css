@@ -268,7 +268,7 @@ button.profile-button > img.avatar-icon {
     contrast(93%);
 }
 
-div.main-content {
+div.new-content {
   width: 100%;
   height: 626px;
   padding: 146px 80px 40px;
@@ -279,7 +279,7 @@ div.main-content {
   background-size: cover;
 }
 
-div.main-content > div.new-content-section {
+div.new-content > div.new-content-section {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -307,4 +307,50 @@ div.new-content-section > button {
   background: #222;
   font-size: 1rem;
   color: white;
+}
+
+div.nearby-destinations-section {
+  margin: 24px 0;
+  padding: 0 80px;
+}
+
+div.nearby-destinations-section > h1 {
+  font-size: 32px;
+  padding-bottom: 16px;
+}
+
+div.nearby-destinations-section > div.nearby-destinations-card-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+div.nearby-destinations-card-section div.nearby-destinations-card {
+  width: 304.25px;
+  height: 64px;
+  display: flex;
+}
+
+div.nearby-destinations-card > img.card-image {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  margin-right: 16px;
+}
+
+div.nearby-destinations-card div.card-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div.card-description > b {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+div.card-description > span {
+  font-size: 1.125rem;
+  line-height: 20px;
 }
