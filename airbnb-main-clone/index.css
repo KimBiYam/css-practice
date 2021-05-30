@@ -171,12 +171,18 @@ header.main-header {
   width: 100%;
   height: 80px;
   display: flex;
-  position: absolute;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
   padding: 0 80px;
   font-size: 1.142rem;
+  transition: background 0.25s;
   z-index: 100;
+}
+
+.header-overflowed {
+  position: fixed;
+  background: #fff;
 }
 
 header.main-header > div.logo-section {
