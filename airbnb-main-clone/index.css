@@ -307,6 +307,7 @@ div.new-content-section > button {
   background: #222;
   font-size: 1rem;
   color: white;
+  cursor: pointer;
 }
 
 div.nearby-destinations-section {
