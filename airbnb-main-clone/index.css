@@ -324,7 +324,6 @@ div.content-wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
-  flex-flow: row;
 }
 
 div.new-content-wrapper {
@@ -440,7 +439,7 @@ div.concept-card-section > a {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding-right: 5px;
+  padding-right: 10px;
 }
 
 div.concept-card-section a img.card-image {
