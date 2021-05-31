@@ -292,8 +292,8 @@ div.profile-section > button.profile-button {
   background: #fff;
   align-items: center;
   border-radius: 22px;
-  border: none;
   cursor: pointer;
+  border: 1px solid #fff;
 }
 
 div.profile-section > button.header-scrolled {
