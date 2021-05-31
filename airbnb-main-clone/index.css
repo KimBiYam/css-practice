@@ -180,6 +180,9 @@ header.header-scrolled {
   position: fixed;
   top: 0;
   background: #fff;
+  -webkit-box-shadow: rgb(0 0 0 / 8%) 0px 1px 12px;
+  -moz-box-shadow: rgb(0 0 0 / 8%) 0px 1px 12px;
+  box-shadow: rgb(0 0 0 / 8%) 0px 1px 12px;
 }
 
 header.main-header > div.header-wrapper {
