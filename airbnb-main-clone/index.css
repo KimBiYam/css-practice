@@ -170,11 +170,7 @@ div.codiv-info > aside > a:hover {
 header.main-header {
   width: 100%;
   height: 80px;
-  display: flex;
-  align-items: center;
   position: absolute;
-  padding: 0 80px;
-  margin: 0 auto;
   font-size: 1.142rem;
   transition: background 0.2s;
   z-index: 100;
@@ -184,11 +180,21 @@ header.header-scrolled {
   background: #fff;
 }
 
-header.main-header a.header-scrolled {
+header.main-header > div.header-wrapper {
+  padding: 0 80px;
+  max-width: 1760px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.header-wrapper a.header-scrolled {
   color: #222 !important;
 }
 
-header.main-header > div.logo-section {
+div.header-wrapper > div.logo-section {
   display: flex;
   flex: 1;
 }
@@ -205,11 +211,11 @@ div.logo-section > a.header-logo > svg.header-scrolled {
   color: #ff385c !important;
 }
 
-header.main-header nav.nav-section {
+div.header-wrapper nav.nav-section {
   font-size: 0;
 }
 
-header.main-header nav.header-scrolled {
+div.header-wrapper nav.header-scrolled {
   display: none !important;
 }
 
@@ -316,16 +322,19 @@ div.content-wrapper {
   flex-flow: row;
 }
 
+div.new-content-wrapper {
+  position: relative;
+  background-image: url(./images/main-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 div.new-content {
   max-width: 1600px;
   height: 626px;
   padding: 146px 80px 40px;
   display: flex;
   flex: 1;
-  position: relative;
-  background-image: url(./images/main-background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 div.new-content > div.new-content-section {
