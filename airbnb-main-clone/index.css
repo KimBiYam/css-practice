@@ -177,6 +177,8 @@ header.main-header {
 }
 
 header.header-scrolled {
+  position: fixed;
+  top: 0;
   background: #fff;
 }
 
