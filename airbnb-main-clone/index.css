@@ -305,19 +305,25 @@ div.profile-section > button.header-scrolled {
   border: 1px solid #dddddd !important;
 }
 
-button.profile-button > img.menu-icon {
+button.profile-button > svg.menu-icon {
   width: 16px;
   height: 16px;
-  filter: invert(11%) sepia(5%) saturate(4%) hue-rotate(321deg) brightness(93%)
-    contrast(92%);
+  fill: #fff;
+  stroke: currentcolor;
+  stroke-width: 3;
+  overflow: visible;
 }
 
-button.profile-button > img.avatar-icon {
+button.profile-button > div {
+  display: flex;
+}
+
+button.profile-button div > svg.avatar-icon {
+  margin-left: 12px;
   width: 30px;
   height: 30px;
-  margin-left: 12px;
-  filter: invert(49%) sepia(5%) saturate(3%) hue-rotate(335deg) brightness(89%)
-    contrast(93%);
+  color: #717171;
+  fill: currentColor;
 }
 
 div.content-wrapper {
