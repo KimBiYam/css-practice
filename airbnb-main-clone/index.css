@@ -176,7 +176,7 @@ header.main-header {
   z-index: 100;
 }
 
-header.header-scrolled {
+header.scroll-changed {
   position: fixed;
   top: 0;
   background: #fff;
@@ -195,7 +195,7 @@ header.main-header > div.header-wrapper {
   align-items: center;
 }
 
-div.header-wrapper a.header-scrolled {
+div.header-wrapper a.scroll-changed {
   color: #222 !important;
 }
 
@@ -212,7 +212,7 @@ div.logo-section > a.header-logo > svg.logo-icon {
   color: #fff;
 }
 
-div.logo-section > a.header-logo > svg.header-scrolled {
+div.logo-section > a.header-logo > svg.scroll-changed {
   color: #ff385c !important;
 }
 
@@ -318,7 +318,7 @@ div.profile-section svg.globe-icon {
   color: #fff;
 }
 
-svg.header-scrolled {
+svg.scroll-changed {
   color: #222 !important;
 }
 
@@ -335,7 +335,7 @@ div.profile-section > button.profile-button {
   border: 1px solid #fff;
 }
 
-div.profile-section > button.header-scrolled {
+div.profile-section > button.scroll-changed {
   border: 1px solid #dddddd !important;
 }
 
