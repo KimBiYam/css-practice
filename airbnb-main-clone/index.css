@@ -437,7 +437,7 @@ div.concept-card-section > a {
   display: flex;
   flex-direction: column;
   flex: 1;
-  padding-right: 10px;
+  padding: 0 5px;
 }
 
 div.concept-card-section a img.card-image {
