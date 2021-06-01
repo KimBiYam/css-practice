@@ -238,9 +238,12 @@ nav.nav-section > div.search-section {
   position: absolute;
 }
 
-div.search-section > div.header-search-bar {
+div.search-section > div.nav-button-section {
   height: 80px;
-  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
 }
 
 div.search-section > div.search-button {
