@@ -247,7 +247,7 @@ div.search-section > div.nav-button-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 0;
+  transition: 2s;
 }
 
 div.search-section > div.scroll-changed {
@@ -256,10 +256,14 @@ div.search-section > div.scroll-changed {
 
 div.search-section > div.search-button {
   display: flex;
+  align-items: center;
   flex: 1;
   background: #fff;
   border-radius: 32px;
   font-size: 1rem;
+}
+
+div.search-section div.scroll-changed:nth-child(2) {
 }
 
 div.search-button div {
