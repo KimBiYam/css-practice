@@ -220,14 +220,45 @@ div.header-wrapper nav.nav-section {
   font-size: 0;
 }
 
-div.header-wrapper nav.header-scrolled {
-  display: none !important;
-}
-
 nav.nav-section a {
   padding: 10px 16px;
   font-size: 1.142rem;
   color: #fff;
+}
+
+nav.nav-section > div.search-section {
+  width: 850px;
+  height: 146px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+div.search-section > div.header-search-bar {
+  height: 80px;
+  background: transparent;
+}
+
+div.search-section > div.search-button {
+  display: flex;
+  flex: 1;
+  background: #fff;
+  border-radius: 32px;
+  font-size: 1rem;
+}
+
+div.search-button div {
+  padding: 14px 32px;
+  color: #222;
+}
+
+div.search-button div.check-in-out-button,
+div.search-button div.guests-button {
+  flex: 0.5;
 }
 
 nav.nav-section a:hover {
