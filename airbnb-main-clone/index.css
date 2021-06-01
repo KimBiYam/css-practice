@@ -238,12 +238,20 @@ nav.nav-section > div.search-section {
   position: absolute;
 }
 
+nav.nav-section > div.scroll-changed {
+  height: inherit;
+}
+
 div.search-section > div.nav-button-section {
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 0;
+}
+
+div.search-section > div.scroll-changed {
+  display: none;
 }
 
 div.search-section > div.search-button {
