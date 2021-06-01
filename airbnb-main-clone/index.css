@@ -340,7 +340,7 @@ div.new-content-wrapper {
 }
 
 div.new-content {
-  max-width: 1600px;
+  max-width: 1760px;
   height: 626px;
   padding: 146px 80px 40px;
   display: flex;
@@ -379,7 +379,7 @@ div.new-content-section > button {
 
 div.nearby-destinations-section {
   flex: 1;
-  max-width: 1600px;
+  max-width: 1760px;
   height: 260px;
   margin: 24px 0;
   padding: 0 80px;
@@ -426,7 +426,7 @@ div.card-description > span {
 
 div.concept-section {
   flex: 1;
-  max-width: 1600px;
+  max-width: 1760px;
   padding: 0 80px;
 }
 
@@ -462,7 +462,7 @@ div.concept-card-section a span {
 div.trip-ideas-section {
   flex: 1;
   display: flex;
-  max-width: 1600px;
+  max-width: 1760px;
   padding: 0 80px;
   margin: 24px 0;
   height: 400px;
