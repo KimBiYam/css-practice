@@ -373,6 +373,7 @@ button.profile-button div > svg.avatar-icon {
 
 div.content-wrapper {
   width: 100%;
+  margin: 24px 0;
   display: flex;
   justify-content: center;
 }
@@ -382,6 +383,10 @@ div.new-content-wrapper {
   background-image: url(./images/main-background.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+div.new-content-wrapper > div.content-wrapper {
+  margin: 0;
 }
 
 div.new-content {
@@ -425,8 +430,7 @@ div.new-content-section > button {
 div.nearby-destinations-section {
   flex: 1;
   max-width: 1760px;
-  height: 260px;
-  margin: 24px 0;
+  height: 242px;
   padding: 0 80px;
 }
 
