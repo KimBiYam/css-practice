@@ -488,14 +488,15 @@ div.concept-section > div.concept-card-section {
   display: flex;
 }
 
-div.concept-card-section > a {
+div.concept-card-section > a,
+div.experience-card-section > a {
   display: flex;
   flex-direction: column;
   flex: 1;
   padding: 0 5px;
 }
 
-div.concept-card-section a img.card-image {
+a img.card-image {
   width: 100%;
   border-radius: 8px;
 }
@@ -552,4 +553,25 @@ div.trip-ideas-section > a.trip-ideas-link > button {
   background: #222;
   border: none;
   border-radius: 8px;
+}
+
+div.experience-section {
+  flex: 1;
+  max-width: 1760px;
+  padding: 0 80px;
+}
+
+div.experience-section > h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+div.experience-section > span {
+  font-size: 26px;
+  line-height: 37.18px;
+}
+
+div.experience-section > div.experience-card-section {
+  display: flex;
 }
