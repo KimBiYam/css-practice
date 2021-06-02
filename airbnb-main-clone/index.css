@@ -241,8 +241,8 @@ nav.nav-section > div.search-section {
 nav.nav-section > div.scroll-changed {
   transition-property: transform;
   transition-duration: 150ms;
-  transform-origin: 50% 0% !important;
-  transform: scale(0.35, 0.727273) translateY(-58px) !important;
+  transform-origin: 50% 0%;
+  transform: scale(0.35, 0.727273) translateY(-58px);
 }
 
 div.search-section > div.nav-button-section {
@@ -256,12 +256,7 @@ div.search-section > div.scroll-changed:nth-child(1) {
   visibility: hidden;
 }
 
-div.search-section > div.scroll-changed:nth-child(2) {
-  height: 80px;
-  padding: 32px 0;
-}
-
-div.search-section > div.search-button {
+div.search-section > div.search-bar {
   display: flex;
   align-items: center;
   flex: 1;
@@ -270,13 +265,13 @@ div.search-section > div.search-button {
   font-size: 1rem;
 }
 
-div.search-button div {
+div.search-bar div {
   padding: 14px 32px;
   color: #222;
 }
 
-div.search-button div.check-in-out-button,
-div.search-button div.guests-button {
+div.search-bar div.check-in-out-button,
+div.search-bar div.guests-button {
   flex: 0.5;
 }
 

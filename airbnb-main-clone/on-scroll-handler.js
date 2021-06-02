@@ -1,15 +1,16 @@
-const scrollChangedHandler = () => {
+const onScrollHandler = () => {
   let scrollPosition = window.scrollY;
   const codivAside = document.querySelector("div.codiv-info");
   const codivAsideHeight = codivAside.offsetHeight;
 
   window.addEventListener("scroll", () => {
+    const targetElements = getTargetElements();
     scrollPosition = window.scrollY;
 
     if (scrollPosition >= codivAsideHeight) {
-      addClassOnScroll();
+      addScrollChangedClass(targetElements);
     } else {
-      removeClassOnScroll();
+      removeScrollChangedClass(targetElements);
     }
   });
 };
@@ -22,20 +23,18 @@ const getTargetElements = () => {
   return scrollChangeItems;
 };
 
-const addClassOnScroll = () => {
-  const targetElements = getTargetElements();
-
+const addScrollChangedClass = (targetElements) => {
   Array.from(targetElements).forEach((element) => {
     element.classList.add("scroll-changed");
   });
 };
 
-const removeClassOnScroll = () => {
-  const targetElements = getTargetElements();
-
+const removeScrollChangedClass = (targetElements) => {
   Array.from(targetElements).forEach((element) => {
     element.classList.remove("scroll-changed");
   });
 };
 
-scrollChangedHandler();
+const removeSearchbarChildren = () => {};
+
+onScrollHandler();
