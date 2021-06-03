@@ -162,6 +162,13 @@ div.profile-section {
       }
     }
   }
+  a.scroll-changed {
+    &:hover {
+      &::before {
+        background-color: rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
   svg.globe-icon {
     width: 16px;
     height: 16px;
