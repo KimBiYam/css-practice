@@ -1,0 +1,16 @@
+{
+  "name": "airbnb-main-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "on-scroll-handler.js",
+  "scripts": {
+    "build:sass": "sass --style compressed ./scss:dist",
+    "watch:sass": "sass --watch --style compressed ./scss:dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.34.1"
+  }
+}
