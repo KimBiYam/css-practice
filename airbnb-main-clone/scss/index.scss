@@ -298,7 +298,7 @@ div.new-content-section {
 div.nearby-destinations-section {
   flex: 1;
   max-width: 1760px;
-  height: 242px;
+  min-height: 242px;
   padding: 0 80px;
   > h1 {
     font-size: 32px;
@@ -306,8 +306,16 @@ div.nearby-destinations-section {
   }
   > div.nearby-destinations-card-section {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
+
+    @include respond-to(medium) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include respond-to(extra) {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 }
 div.nearby-destinations-card-section {
@@ -352,10 +360,11 @@ div.concept-section {
   }
 }
 div.concept-card-section {
+  flex-wrap: wrap;
   a {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex: 1 1 300px;
     padding: 0 5px;
   }
   a {
@@ -369,6 +378,7 @@ div.concept-card-section {
   }
   img.card-image {
     @include card-image;
+    min-width: 200px;
   }
 }
 div.experience-card-section {
