@@ -1,5 +1,12 @@
-$HEADER_HEIGHT: 80px;
-$BRAND_COLOR: #ff385c;
+$header-height: 80px;
+$brand-color: #ff385c;
+
+$media-breakpoints: (
+  small: 600px,
+  medium: 768px,
+  large: 992px,
+  extra: 1200px,
+);
 
 @mixin card-image {
   width: 100%;
@@ -25,7 +32,7 @@ div.codiv-info {
 }
 header.main-header {
   width: 100%;
-  height: $HEADER_HEIGHT;
+  height: $header-height;
   position: absolute;
   font-size: 1.142rem;
   transition: background 150ms;
@@ -67,7 +74,7 @@ div.logo-section {
       color: #fff;
     }
     > svg.scroll-changed {
-      color: $BRAND_COLOR !important;
+      color: $brand-color !important;
     }
   }
 }
@@ -100,7 +107,7 @@ nav.nav-section {
 }
 div.search-section {
   > div.nav-button-section {
-    height: $HEADER_HEIGHT;
+    height: $header-height;
     display: flex;
     justify-content: center;
     align-items: center;
