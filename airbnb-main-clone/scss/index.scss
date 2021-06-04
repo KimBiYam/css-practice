@@ -1,5 +1,10 @@
-$header-height: 80px;
-$brand-color: #ff385c;
+$HEADER_HEIGHT: 80px;
+$BRAND_COLOR: #ff385c;
+
+@mixin card-image {
+  width: 100%;
+  border-radius: 8px;
+}
 
 div.codiv-info {
   width: 100%;
@@ -20,7 +25,7 @@ div.codiv-info {
 }
 header.main-header {
   width: 100%;
-  height: $header-height;
+  height: $HEADER_HEIGHT;
   position: absolute;
   font-size: 1.142rem;
   transition: background 150ms;
@@ -62,7 +67,7 @@ div.logo-section {
       color: #fff;
     }
     > svg.scroll-changed {
-      color: $brand-color !important;
+      color: $BRAND_COLOR !important;
     }
   }
 }
@@ -95,7 +100,7 @@ nav.nav-section {
 }
 div.search-section {
   > div.nav-button-section {
-    height: $header-height;
+    height: $HEADER_HEIGHT;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -345,8 +350,7 @@ div.concept-card-section {
     }
   }
   img.card-image {
-    width: 100%;
-    border-radius: 8px;
+    @include card-image;
   }
 }
 div.experience-card-section {
@@ -420,7 +424,6 @@ div.experience-section {
 
 div.experience-card-section {
   img.card-image {
-    width: 100%;
-    border-radius: 16px;
+    @include card-image;
   }
 }
