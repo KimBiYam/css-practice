@@ -120,21 +120,23 @@ div.search-section {
     justify-content: center;
     align-items: center;
   }
-  > div.scroll-changed {
-    &:nth-child(1) {
-      visibility: hidden;
-    }
+  div.nav-button-section.scroll-changed {
+    visibility: hidden;
   }
-  > div.search-bar {
-    display: flex;
-    align-items: center;
-    flex: 1;
-    background: #fff;
-    border-radius: 32px;
-    font-size: 1rem;
+
+  div.search-bar.scroll-changed {
+    transition-property: transform;
+    transition-duration: 150ms;
+    transform: scale(2.857142857142857, 1.375) !important;
   }
 }
 div.search-bar {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  background: #fff;
+  border-radius: 32px;
+  font-size: 1rem;
   div {
     padding: 14px 32px;
     color: #222;
