@@ -434,6 +434,7 @@ div.trip-ideas-section {
     }
   }
 }
+
 div.experience-section {
   flex: 1;
   max-width: 1760px;
@@ -448,6 +449,7 @@ div.experience-section {
     line-height: 37.18px;
   }
   > div.experience-card-section {
+    margin-top: 16px;
     display: flex;
   }
 }
@@ -455,5 +457,23 @@ div.experience-section {
 div.experience-card-section {
   img.card-image {
     @include card-image;
+  }
+}
+
+a.experience-card {
+  div.text-section {
+    padding-top: 8px;
+
+    color: black;
+    p:nth-child(1) {
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    p:nth-child(2) {
+      margin-top: 4px;
+      font-size: 14px;
+      font-weight: 400;
+    }
   }
 }
