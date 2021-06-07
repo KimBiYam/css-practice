@@ -127,7 +127,7 @@ div.search-section {
   div.search-bar.scroll-changed {
     transition-property: transform;
     transition-duration: 150ms;
-    transform: scale(2.857142857142857, 1.375) !important;
+    // transform: scale(2.857142857142857, 1.375) !important;
   }
 }
 div.search-bar {
@@ -403,7 +403,7 @@ div.trip-ideas-section {
     color: #222;
     border-radius: 16px;
     background-image: url(../images/trip-ideas-image.png);
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     span {
       &:nth-child(1) {
